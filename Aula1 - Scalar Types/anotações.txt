@@ -1,0 +1,25 @@
+PHP 5.0
+-> Consegue receber objetos como parâmetros
+
+
+PHP 5.1
+-> Consegue receber array
+
+PHP 5.4
+-> Consegue receber Callables;
+callable = Tipo que se refere a funções;
+
+Closure VS. Callable
+Ambos servem para informar que se deve passar uma função como parâmetro, contudo há diferenças entre eles:
+
+--> Closure
+* Usado quando se deve passar APENAS função anonima como parâmetro;
+
+--> callable
+* Usado para definir tipo de parâmetro quando uma função for aceitar um callback, independente de ser uma função anônima ou não.
+
+PHP 7
+-> bool
+-> float
+-> int
+-> String
