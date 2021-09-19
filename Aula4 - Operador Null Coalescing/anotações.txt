@@ -1,0 +1,22 @@
+Definição:
+
+--> Caso seja necessário receber um valor de uma variável via $_GET ou via $_POST, nas versões anteriores do PHP, 
+para verificar se o valor existe, era necessário fazer o seguinte código utilizando a função isset():
+
+$a = isset($_GET['a']) ? $_GET['a'] : "Null";
+echo $a;
+
+O código acima, faz uma verificação se a variável $_GET['a'] existe e é diferente null, e caso isso seja verdade, 
+é adotado a variável $a o valor de $_GET['a'], mas caso negativo, é adotado o valor Null a variável $a.
+
+
+
+--> Utilizando o Null Coalesting Operator:
+
+O mesmo código acima pode ser escrito de uma forma resumida, utilizando o operador ?? (Null Coalesting):
+
+$a = $_GET['a'] ?? "Null";
+echo $a;
+
+O código acima faz a verificação do primeiro termo da sentença ($_GET['a']) e verifica sua existência. 
+Caso ele exista e seja diferente de null, a variável $a receberá seu valor, e caso negativo, a variável $a receberá o segundo valor da sentença ("Null").

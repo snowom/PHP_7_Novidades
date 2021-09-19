@@ -1,0 +1,23 @@
+=-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=-
+=-=-=-=--=--=-=-=-= Operador de Comparação Combinado - Spaceship =-=-=-=--=--=-=-=-=
+=-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=--=--=-=-=-==-=-=-=-
+
+--> Sintaxe:
+$valor_1 <=> $valor_2
+
+--> Este operador é utilizado para comparar 2 valores, podendo ser Strings, Int, Float e Array.
+No caso dos arrays, a comparação se dará pela quantidade de elementos presente nos arrays que serão comparados.
+
+O retorno dado pela comparação dos elementos utilizando esse operador (<=>) é dado pelos seguintes casos abaixo:
+
+--> Caso $valor_1 seja MENOR do que $valor_2, será retornado -1;
+--> Caso $valor_1 seja IGUAL do que $valor_2, será retornado 0;
+--> Caso $valor_1 seja MAIOR do que $valor_2, será retornado 1;
+
+No caso doas arrays, a comparação é diferente:
+Dado o seguinte código: $array1 <=> $array2;
+
+--> Caso $array1 tiver MENOS elementos que o $array2, será retornado -1;
+--> Caso $array1 tiver MAIS elementos que o $array2, será retornado 1;
+--> Caso $array1 e $array2 forem EXATAMENTE IGUAIS (mesmo tamanho, e elementos na mesma ordem), será retornado 0;
+--> Caso ambos arrays tenham o MESMO TAMANHO e tenha ELEMENTOS DIFERENTES, a comparação será feita elemento por elemento;

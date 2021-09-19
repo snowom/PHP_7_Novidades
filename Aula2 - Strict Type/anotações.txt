@@ -1,0 +1,7 @@
+Strict Type
+
+Sintaxe:
+declare(strict_types = 1);
+
+--> É utilizado para definir o arquivo PHP em que está sendo utilizado como modo rígido,
+dessa forma, ele trará mais consistência no sistema;
