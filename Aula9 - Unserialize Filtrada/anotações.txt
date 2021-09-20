@@ -1,0 +1,14 @@
+=-=-=-=-=-=-=-=-= Filtered unserialize() =-=-=-=-=-=-=-=-= 
+
+
+--> Essa função é utilizada para filtrar e escolher os objetos ou dados que serão recuperados na desserialização;
+Abaixo estão os filtros possíveis:
+
+1) $data = unserialize($foo, ["allowed_classes" => false]);
+--> O código acima BLOQUEIA a recuperação de TODOS os dados serializados do arquivo $foo;
+
+2) $data = unserialize($foo, ["allowed_classes" => ["Class1", "Class2"]]);
+--> O código acima permite a recuperação somente dos dados pertinentes a Class1 e Class2 do arquivo $foo;
+
+3) $data = unserialize($foo, ["allowed_classes" => true]);
+--> O código acima PERMITE a recuperação de TODOS os dados serializados do arquivo $foo; (opção padrão);

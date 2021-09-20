@@ -1,0 +1,8 @@
+Metodos da classe Exception:
+
+--> getMessage(): Retorna a mensagem da exceção;
+--> getCode(): Retorna o códgo do erro da exceção;
+--> getFile(): Retorna o caminho do arquivo onde foi dada a exceção;
+--> getTrace(): Retorna o Stack Trace (Rastreamento de Pilha) da exceção em um Array;
+--> getTraceAsString(): Retorna o Stack Trace (Rastreamento de Pilha) da exceção em uma String;
+__toString();

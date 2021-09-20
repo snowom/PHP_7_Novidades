@@ -1,0 +1,9 @@
+=-=-=-=-=-=-=-=-= Função intdiv =-=-=-=-=-=-=-=-=
+
+--> Sintaxe:
+intdiv($valor1, $valor2);
+
+Essa função retorna a parte INTEIRA do resultado da divisão entre $valor1 e $valor2;
+
+
+Ex) echo $intdiv(3,5); --> Irá retonar 0;
